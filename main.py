@@ -1,8 +1,8 @@
 import requests
 import threading
 
-print('001000010101010101010101010-----SmSbo-Mb
-
+print('001000010101010101010101010-----SmSbo-Mb')
+print('')
 a = str(input('Enter phone number in format 7916********..'))
 send_for_number(a)
 def send_for_number(phone):
